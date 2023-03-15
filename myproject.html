@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="assets/34464790.png">
+    <link rel="stylesheet" href="myproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand " href="index.html"><img src="./assets/dumbways.png" style="width: 4rem"/></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link fw-bolder active text-danger text-isPrimary" href="myproject.html">My Project</a>
+            </li>
+          </ul>
+          
+            <a class="btn btn-danger isPrimary px-3" href="#">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!--navbar lama-->
+    <!--<nav>
+      <div class="nav-left">
+        <img src="https://dumbways.id/assets/images/brandred.png" alt="Dumbways" width="10%" href="index.html"/>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="myproject.html">My Project</a>
+          </li>
+          <li class="item">
+            <a href="testimoni.html" class="active">Testimonials</a>
+        </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="FormNavbar.html">Contact Me</a>
+      </div>
+      <div id="barsmenu" style="margin-right: 10px;">
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+    </div>
+  </nav>  -->
+
+  <!-- Content form add blog -->
+  <h3 class=" mt-5 text-center fw-bold">Add My Project</h3>
+  <div class="container d-flex justify-content-center">
+
+    <form class="w-75">
+      <div class="mb-3">
+        <label for="title" class="form-label fw-bolder">Project Name</label>
+        <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+      </div>
+      <div class="Date">
+
+      <div class="mb-3">
+        <label for="content" class="form-label fw-bolder">Content</label>
+        <textarea class="form-control h-50" id="content" style="resize: none;"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="uploadImage" class="form-label fw-bolder">Upload Image</label>
+        <input class="form-control" type="file" id="uploadImage">
+      </div>
+
+      <div class="mt-5 d-flex justify-content-end">
+        <button type="submit" class="btn btn-danger isPrimary px-3 fw-bolder">Post Blog</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- End Content form add blog -->
+
+ <div class="hamburger-nav" id="hamburger-nav">
+    <a href="index.html">Home</a>
+    <a href="myproject.html" class="hamburger-active">My Project</a>
+    <a href="testimoni.html">Testimonials</a>
+    <a href="FormNavbar.html">Contact Me</a>
+</div>
+    </nav>
+
+    <div class="isi-form">
+    <h1 class="add-my-project" >ADD MY PROJECT</h1>
+    <form onsubmit="submitProject(event)">
+      <div class="name">
+        <label for="input-name">Project Name</label>
+        <input class="nama" id="input-name" type="input-name" />
+      </div>
+        <div class="Date">
+        <div class="start-date" style="margin-right: 55px;" >
+          <label for="input-date" >Start Date</label>
+          <input class="tanggal" id="input-start-date" type="date" />
+        </div>
+
+        <div class="end-date">
+          <label for="input-date">End Date</label>
+          <input class="tanggal" id="input-end-date" type="date" />
+        </div>
+      </div>
+
+      <div>
+        <label for="input-message">Description</label>
+        <textarea class="pesan" name="pesan" id="input-message" cols="30" rows="10" style="resize: none"></textarea>
+      </div> -->
+
+      <div>
+        <label for="checkbox">Technologies</label>
+        <div class="checkbox-technologies">
+          <div class="checkbox-kiri" >
+            <div>
+              <input value="fa-node-js" type="checkbox" id="inputNode">
+              <label class="fontTech" for="inputNode"> Node JS </label>
+            </div>
+            <div>
+              <input value="fa-react" type="checkbox" id="inputReact">
+              <label class="fontTech" for="inputReact" > React JS </label>
+            </div>
+          </div>
+          <div class="checkbox-kanan">
+            <div>
+              <input value="fa-java" type="checkbox" id="inputNext">
+              <label class="fontTech" for="inputNext"> Next JS </label>
+            </div>
+            <div>
+              <input value="fa-square-js" type="checkbox" id="inputTS">
+              <label class="fontTech" for="inputTS"> TypeScript </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div>
+      <label>Upload Image</label>
+      <div class="input-blog-image-group">
+        <label for="input-blog-image">
+          <img src="./assets/logo href.png" alt="file" style="width:30px"/>
+        </label>
+        <input type="file" id="input-blog-image" hidden/>
+      </div>
+    </div>
+
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+      
+      <div class="isi-konten">
+        <hr class="line" />
+      <h1 class="judul-my-project" >MY PROJECT</h1>
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div>
+            <img class="blog-image" src="./assets/medium-shot-man-wearing-vr-glasses.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="judul-blog">
+              <a class="judul-pasar-coding" href="isiblog.html" target="_blank"
+                >Virtual Reality di Indonesia</a
+              >
+            </div>
+            <div class="detail-blog-content">
+              Durasi : 3 bulan
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir.
+            </p>
+          </div>
+          <div class="logo-blog">
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="btn-group">
+            <button class="btn-edit">Edit Post</button>
+            <button class="btn-post">Delete Blog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/testimonials.js"></script>
+    <script src="./JS/myproject.js" ></script>
+  </body>
+</html>
